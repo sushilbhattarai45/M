@@ -1,11 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 import { MaterialIcons } from "@expo/vector-icons";
 
 import Colors from "../components/styles";
-export default function Home() {
+export default function Home({ navigation, route }) {
   return (
     <View>
       <StatusBar style="auto" />
@@ -208,7 +208,8 @@ export default function Home() {
                       />
                     </View>
                   </View>
-                  <View
+                  <Pressable
+                    onPress={() => navigation.navigate("Income")}
                     style={{
                       flex: 1,
                       left: 10,
@@ -235,9 +236,10 @@ export default function Home() {
                     >
                       Income{" "}
                     </Text>
-                  </View>
+                  </Pressable>
                 </View>
-                <View
+                <Pressable
+                  onPress={() => navigation.navigate("Expenses")}
                   style={{
                     flex: 1,
                     backgroundColor: Colors.white,
@@ -299,10 +301,11 @@ export default function Home() {
                       Expenses{" "}
                     </Text>
                   </View>
-                </View>
+                </Pressable>
               </View>
 
               {/* Transaction details starts*/}
+
               <View>
                 <View style={{ marginTop: 10 }}>
                   <View
