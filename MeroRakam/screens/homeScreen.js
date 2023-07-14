@@ -5,9 +5,16 @@ import { Feather } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 
 import Colors from "../components/styles";
+import TransItem from "../components/transItem";
 export default function Home({ navigation, route }) {
   return (
-    <View>
+    <View
+      style={{
+        height: "100%",
+        position: "relative",
+        display: "flex",
+      }}
+    >
       <StatusBar style="auto" />
       <View
         style={{
@@ -303,10 +310,14 @@ export default function Home({ navigation, route }) {
                   </View>
                 </Pressable>
               </View>
+              <TransItem
+                style={{
+                  flex: 1,
+                }}
+              />
 
               {/* Transaction details starts*/}
-
-              <View>
+              {/* <View>
                 <View style={{ marginTop: 10 }}>
                   <View
                     style={{
@@ -317,7 +328,7 @@ export default function Home({ navigation, route }) {
                     }}
                   ></View>
                 </View>
-              </View>
+              </View> */}
             </View>
           </View>
         </View>

@@ -10,7 +10,7 @@ export default function AddTrans({ navigation: { goBack } }) {
         flex: 1,
       }}
     >
-      <Header goBack={goBack} name="Add Transaction" />
+      <Header back={goBack} name="Add Transaction" />
 
       <View style={{ margin: 20 }}>
         <View
