@@ -30,7 +30,7 @@ export default function Home({ navigation, route }) {
               color: Colors.lightgrey,
             }}
           >
-            Good Morning!
+            Good Evening!
           </Text>
           <View
             style={{
