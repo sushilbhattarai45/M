@@ -15,7 +15,7 @@ export default function Home({ navigation, route }) {
         display: "flex",
       }}
     >
-      <StatusBar style="" />
+      <StatusBar style="auto" />
       <View
         style={{
           marginTop: 50,
