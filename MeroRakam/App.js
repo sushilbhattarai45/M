@@ -15,6 +15,7 @@ import Expenses from "./screens/ExpensesTrans";
 import Colors from "./components/styles";
 import newScreen from "./screens/newScreen";
 import AddTrans from "./screens/AddTrans";
+import Auth from "./screens/AuthScreen";
 const Stack = createNativeStackNavigator();
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -112,6 +113,11 @@ export default function App() {
           headerShown: false,
         }}
       >
+        <Stack.Screen
+          name="Auth"
+          component={Auth}
+          options={{ headerShown: false }}
+        />
         <Stack.Screen
           name="Home"
           component={TabNavigator}
