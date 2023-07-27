@@ -4,7 +4,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 import TransItem from "../components/transItem";
 import { View, Text, StyleSheet, ScrollView, Pressable } from "react-native";
 import { StatusBar } from "expo-status-bar";
-export default function Home({ navigation }) {
+export default function newScreen() {
   return (
     <ScrollView>
       <StatusBar style="auto" />

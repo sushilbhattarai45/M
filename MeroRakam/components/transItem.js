@@ -36,17 +36,19 @@ export default function TransItem({ navigation }) {
         <View>
           {data.map((item, index) => {
             return (
-              <Text
-                style={{
-                  fontFamily: "BreeSerif-Regular",
-                  fontSize: 15,
-                  paddingLeft: 50,
-                  color: "black",
-                  borderWidth: 1,
-                }}
-              >
-                {item.name}
-              </Text>
+              <View>
+                <Text
+                  style={{
+                    fontFamily: "BreeSerif-Regular",
+                    fontSize: 15,
+                    paddingLeft: 50,
+                    color: "black",
+                    borderWidth: 1,
+                  }}
+                >
+                  {item.name}
+                </Text>
+              </View>
             );
           })}
         </View>

@@ -13,6 +13,7 @@ import "./components/imports";
 import { NavigationContainer } from "@react-navigation/native";
 import Expenses from "./screens/ExpensesTrans";
 import Colors from "./components/styles";
+import newScreen from "./screens/newScreen";
 import AddTrans from "./screens/AddTrans";
 const Stack = createNativeStackNavigator();
 export default function App() {
