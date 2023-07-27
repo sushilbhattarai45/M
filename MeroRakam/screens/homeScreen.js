@@ -1,9 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { Feather } from "@expo/vector-icons";
-
 import { MaterialIcons } from "@expo/vector-icons";
-
 import Colors from "../components/styles";
 import TransItem from "../components/transItem";
 export default function Home({ navigation, route }) {
@@ -15,7 +13,7 @@ export default function Home({ navigation, route }) {
         display: "flex",
       }}
     >
-      <StatusBar style="auto" />
+      <StatusBar style="" />
       <View
         style={{
           marginTop: 50,
