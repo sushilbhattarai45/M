@@ -72,7 +72,7 @@ export default function App() {
                   alignItems: "center",
                   justifyContent: "center",
                   alignContent: "center",
-                  borderRadius: 40,
+                  borderRadius: 41,
                 }}
               >
                 <Ionicons
